@@ -48,7 +48,7 @@ class SignUp extends React.Component {
     }
   }
 
-  handleSubmit = event => {
+  handleChange = event => {
     const { name, value } = event.target;
 
     this.setState({ [name]: value });
@@ -87,9 +87,9 @@ class SignUp extends React.Component {
             required
           ></FormInput>
           <FormInput
-            type="text"
+            type="password"
             name="confirmPassword"
-            value={password}
+            value={confirmPassword}
             onChange={this.handleChange}
             label="Confirm Password"
             required
